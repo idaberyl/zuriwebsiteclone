@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <title>Zuri</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo2.svg" alt="" />
+      <nav>
+        <ul>
+          <li id="house"  onclick="clickText1()"><a href="#">Home</a></li>
+          <li  id="impt"  onclick="clickText3()"><a href="#impact">Impact </a></li>
+          <li id="hireUs"  onclick="clickText2()"><a href="#hire">Why Us ?</a></li>
+        </ul>
+      </nav>
+      <button class="hire-talents">Hire Talents</button>
+    </header>
+    <main>
+      <section class="first">
+        <h1>Vetted and Trusted <span class="topred">talents</span></h1>
+        <img src="./images/thick2.svg" alt="" class="thick" />
+        <p class="toptext">
+          At Zuri Team, we train, test and place talent in <br />
+          various industries. We have access to the best <br />
+          pool of skills in the tech Industry.
+        </p>
+        <button class="hire-talents2">Hire Talents</button>
+        <button class="graybtn">Join Talent Pool</button>
+        <img src="./images/section1.png" class="section1image" alt="">
+        <!-- <img src="./images/line1.svg" alt="" class="line1"> -->
+      </section>
+      <section class="second" id="impact">
+           <h2 >We have impacted the lives <br>
+            of <span class="topred">thousands</span> around the <br>
+            world
+          </h2>
+          <p class="blacktext">6,000 trained in 14 months</p>
+          <p class="greytext">Talent Placed in 5 countries</p>
+          <div class="images">
+          <img src="./images/GER.svg" alt="" class="germany">
+          <img src="./images/ENG.svg" alt="" class="england">
+          <img src="./images/ind.svg" alt="">
+          <img src="./images/NIG.svg" alt="">
+          <img src="./images/ussa.svg" alt="">
+          </div>
+          <img src="./images/section2.png" alt="" class="section2image">
+      </section>
+      <section class="third">
+        <h3>Skills of our <span class="topred"> talents</span> that <br> you will need</h3>
+        <div class="buttongroup">
+            <button class="shadow">UI/UX Designers</button>
+            <button class="shadow">Backend Developers</button>
+            <button class="shadow">DevOps Engineer</button>
+            <button class="shadow">Frontend Developers</button>
+        </div>
+        <h3 class="heading">Where our talents work</h3>
+        <div class="buttongroup2" id="hire">
+            <button class="shadow">GitHub</button>
+            <button class="shadow">Microsoft</button>
+            <button class="shadow">Reskill Americans</button>
+            <button class="shadow">Flutterwave</button>
+            <button class="shadow">Google</button>
+            <button class="shadow">Career Transitioners</button>
+        </div>
+      </section>
+      <section class="fifth">
+        <h4 >Why Hire our <span class="topred">Talents</span></h4>
+        <div class="buttongroup3">
+            <button class="shadow2">
+                <img src="./images/people.svg" alt="" class="mech"><br>
+                Zuri team has a highly skilled set of <br>
+                talents that are built on referral and <br>
+                successful partnerships.
+            </button>
+            <button class="shadow2">
+                <img src="./images/mech.svg" alt="" class="mech"> <br>
+                Our recruiters are exceptionally <br> skilled in identifying top talent <br>
+                around the globe and matching <br>them with the client's needs.
+            </button>
+            <button class="shadow2">
+                <img src="./images/hand.svg" alt="" class="mech"><br>
+                We have an 85% fill ratio for every <br> open position we partner for.
+            </button>
+        </div>
+        <div class="buttongroup4">
+            <button class="shadow2 plus">
+                <img src="./images/write.svg" alt="" class="mech"><br>
+                Contract renewal rate for our <br> consultant is 90 percent.
+            </button>
+            <button class="shadow2 plus">
+                <img src="./images/many.svg" class="mech" alt=""><br>
+                60% of our consultants are <br> converted to full-time employees.
+            </button>
+        </div>
+        <div class="buttoncover">
+        <button class="hire-talents2">Hire Talents</button>
+        <button class="graybtn">Join Talent Pool</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <img src="./images/logo.svg" alt="">
+        <div class="socials">
+            <img src="./images/facebook.svg" alt="">
+            <img src="./images/linkd.svg" alt="" class="linkd">
+            <img src="./images/twit.png" alt="" class="twit">
+            <img src="./images/youtube.svg" alt="">
+        </div>
+        <p class="copyright">&copy; Copyright 2022 ZURI TEAM. All rights Reserved</p>
+        <a href="mailto:talent@zuri.team">talent@zuri.team</a>
+    </footer>
+    <script>
+         var hire = document.getElementById('hireUs');
+         var house = document.getElementById('house');
+         var impact = document.getElementById('impt');
+        function clickText1(){
+            house.style.borderBottom = '3px solid #e7332b';
+            impact.style.borderBottom = 'none';
+             hire.style.borderBottom = 'none';
+        }
+        function clickText2(){
+            hire.style.borderBottom = '3px solid #e7332b';
+            impact.style.borderBottom = 'none';
+            house.style.borderBottom = 'none';
+        }
+        function clickText3(){
+            impact.style.borderBottom = '3px solid #e7332b';
+            house.style.borderBottom = 'none';
+            hire.style.borderBottom = 'none';
+        }
+        
+    </script>
+  </body>
+</html>
